@@ -60,20 +60,20 @@ namespace WinFormsApp1
             // cadastrarClienteToolStripMenuItem
             // 
             this.cadastrarClienteToolStripMenuItem.Name = "cadastrarClienteToolStripMenuItem";
-            this.cadastrarClienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cadastrarClienteToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.cadastrarClienteToolStripMenuItem.Text = "Cadastrar Cliente";
             this.cadastrarClienteToolStripMenuItem.Click += new System.EventHandler(this.cadastrarClienteToolStripMenuItem_Click);
             // 
             // visualizarCadastrosToolStripMenuItem
             // 
             this.visualizarCadastrosToolStripMenuItem.Name = "visualizarCadastrosToolStripMenuItem";
-            this.visualizarCadastrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.visualizarCadastrosToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.visualizarCadastrosToolStripMenuItem.Text = "Visualizar cadastros";
             // 
             // editarCadastrosToolStripMenuItem
             // 
             this.editarCadastrosToolStripMenuItem.Name = "editarCadastrosToolStripMenuItem";
-            this.editarCadastrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editarCadastrosToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.editarCadastrosToolStripMenuItem.Text = "Editar cadastros";
             // 
             // Form1
@@ -85,6 +85,7 @@ namespace WinFormsApp1
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "frmPrincipal";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

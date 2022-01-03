@@ -35,8 +35,28 @@ namespace WinFormsApp1
             txtNomeCompleto.Text = "";
             txtNumero.Text = "";
             txtEndereco.Text = "";
+            cboEstados.Text = "Selecione";
             dtNascimento.Text = DateTime.Now.ToString();
+            //dtGridEstados.Columns.Clear();
+           // dtGridEstados.Visible.fa;
             
+        }
+
+        private void fmrCadastrarCliente_Load(object sender, EventArgs e)
+        {
+            cboEstados.DataSource = Estado.Lista();
+            cboEstados.Text = "Selecione";
+            dtGridEstados.DataSource = Estado.Lista();
+            /*cboEstados.Items.Clear();
+            foreach (Estado estado in Estado.Lista())
+            {
+           
+                cboEstados.Items.Add(estado);
+            }
+            */
+
+
+
         }
     }
 }

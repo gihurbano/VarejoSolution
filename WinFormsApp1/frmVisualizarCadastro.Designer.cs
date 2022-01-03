@@ -36,12 +36,11 @@ namespace WinFormsApp1
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 42);
+            this.dataGridView1.Location = new System.Drawing.Point(37, 64);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 396);
+            this.dataGridView1.Size = new System.Drawing.Size(736, 343);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // frmVisualizarCadastro
             // 
@@ -51,6 +50,7 @@ namespace WinFormsApp1
             this.Controls.Add(this.dataGridView1);
             this.Name = "frmVisualizarCadastro";
             this.Text = "Visualizar Cadastros de Clientes";
+            this.Load += new System.EventHandler(this.frmVisualizarCadastro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

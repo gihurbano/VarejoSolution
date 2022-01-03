@@ -39,6 +39,10 @@ namespace WinFormsApp1
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.bntLimpar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
+            this.cboEstados = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dtGridEstados = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGridEstados)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNomeCompleto
@@ -126,11 +130,40 @@ namespace WinFormsApp1
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             // 
+            // cboEstados
+            // 
+            this.cboEstados.FormattingEnabled = true;
+            this.cboEstados.Location = new System.Drawing.Point(104, 120);
+            this.cboEstados.Name = "cboEstados";
+            this.cboEstados.Size = new System.Drawing.Size(121, 23);
+            this.cboEstados.TabIndex = 11;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(21, 128);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(42, 15);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Estado";
+            // 
+            // dtGridEstados
+            // 
+            this.dtGridEstados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtGridEstados.Location = new System.Drawing.Point(272, 255);
+            this.dtGridEstados.Name = "dtGridEstados";
+            this.dtGridEstados.RowTemplate.Height = 25;
+            this.dtGridEstados.Size = new System.Drawing.Size(240, 150);
+            this.dtGridEstados.TabIndex = 13;
+            // 
             // fmrCadastrarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dtGridEstados);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.cboEstados);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.bntLimpar);
             this.Controls.Add(this.txtNumero);
@@ -143,6 +176,8 @@ namespace WinFormsApp1
             this.Controls.Add(this.txtNomeCompleto);
             this.Name = "fmrCadastrarCliente";
             this.Text = "Cadastro de Cliente";
+            this.Load += new System.EventHandler(this.fmrCadastrarCliente_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtGridEstados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,5 +195,8 @@ namespace WinFormsApp1
         private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.Button bntLimpar;
         private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.ComboBox cboEstados;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridView dtGridEstados;
     }
 }

@@ -22,5 +22,10 @@ namespace WinFormsApp1
             fmrCadastrarCliente frmCadastroCliente = new fmrCadastrarCliente();
             frmCadastroCliente.ShowDialog();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
